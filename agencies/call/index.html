@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Book your Agent Sprint call · InfiniteCR8</title>
+<meta name="robots" content="noindex">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LZ4Z04NEX0"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-LZ4Z04NEX0');</script>
+<!-- Meta Pixel: InfiniteCR8 Agent Sprint -->
+<script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','1425865039738937');fbq('track','PageView');</script>
+<noscript><img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=1425865039738937&amp;ev=PageView&amp;noscript=1"></noscript>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@600;800;900&family=Montserrat:wght@400;500;600;700&display=swap">
+<style>
+/* Layout: Gym Launch Sprint blueprint — black/light alternating bands, centred column, every band ends in one gold CTA. One page, six niche versions (hash per niche). Single committed look. */
+:root{
+  --black:#0A0908; --ink:#000; --white:#fff; --page:#F6F5F1; --grid:#ebe8df;
+  --gold:#B8A148; --gold-lt:#EBDA83; --gold-dk:#6E5E19; --gold-mid:#D5C345;
+  --mute:#55524C; --card-dk:#151311; --line-dk:#2a261f; --soft:#cfcbc2;
+  --display:"Rubik","Arial Black",system-ui,sans-serif;
+  --body:"Montserrat",system-ui,-apple-system,"Segoe UI",sans-serif;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html,body{overflow-x:hidden}
+body{background:var(--black);color:var(--white);font-family:var(--body);font-size:16px;line-height:1.6}
+.wrap{max-width:1040px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.narrow{max-width:780px}
+h1,h2,h3{font-family:var(--display);text-transform:uppercase;line-height:1.05;margin:0;text-wrap:balance;letter-spacing:-.01em}
+h1{font-size:clamp(30px,5.2vw,54px);font-weight:900}
+h2{font-size:clamp(24px,3.6vw,38px);font-weight:900}
+h3{font-size:19px;font-weight:800}
+.gold{color:var(--gold-lt)}
+.eyebrow{font-size:11px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--gold)}
+.topbar{background:linear-gradient(90deg,var(--gold),var(--gold-lt));color:var(--ink);text-align:center;font-size:13px;font-weight:700;letter-spacing:.08em;padding-block:10px;text-transform:uppercase}
+.topbar span{font-weight:600;letter-spacing:0;text-transform:none}
+header{border-bottom:1px solid var(--line-dk);padding-block:18px;text-align:center}
+.logo{display:inline-flex;align-items:center;gap:10px;font-family:var(--display);font-weight:800;font-size:20px;letter-spacing:.02em;text-transform:uppercase}
+.logo i{width:30px;height:30px;border-radius:50%;background:conic-gradient(from 200deg,var(--gold-dk),var(--gold-lt),var(--gold),var(--gold-dk));display:inline-block;position:relative}
+.logo i::after{content:"";position:absolute;inset:8px;border-radius:50%;background:var(--black)}
+.logo b{color:var(--gold-lt);font-weight:800}
+section{padding-block:72px}
+.dark{background:radial-gradient(ellipse at 50% 0%,#1c1810 0%,var(--black) 60%)}
+.light{background-color:var(--page);background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:32px 32px;color:var(--ink)}
+.white{background:var(--white);color:var(--ink)}
+.center{text-align:center}
+.stack{display:flex;flex-direction:column;align-items:center;gap:18px}
+.hero .sub{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:clamp(17px,2.2vw,22px);line-height:1.25}
+.lead{color:#d6d3cc;max-width:660px;margin:0}
+.fit{font-size:13px;font-weight:700;letter-spacing:.06em;color:var(--gold-lt);border:1px solid #6e5e1980;border-radius:999px;padding:6px 14px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border:0;cursor:pointer;border-radius:999px;padding:16px 30px;font:800 14px/1.2 var(--body);letter-spacing:.08em;text-transform:uppercase;color:var(--ink);background:linear-gradient(180deg,var(--gold-lt),var(--gold) 60%,#a08b38);box-shadow:0 10px 30px -8px #b8a14880;text-decoration:none;text-align:center}
+.btn:hover{filter:brightness(1.06)}
+.btn:focus-visible{outline:3px solid var(--gold-lt);outline-offset:3px}
+.chart{width:100%;max-width:620px;background:linear-gradient(180deg,#14120e,#0d0c0a);border:1px solid var(--line-dk);border-radius:20px;padding:22px 22px 14px}
+.chart .eyebrow{display:block;text-align:left;margin-bottom:6px}
+.chart svg{width:100%;height:auto;display:block}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;width:100%;max-width:880px}
+.stat{border:1px solid var(--line-dk);border-radius:16px;padding:18px 14px;background:var(--card-dk);text-align:center;min-width:0}
+.stat strong{display:block;font-family:var(--display);font-weight:900;font-size:clamp(26px,3.6vw,36px);color:var(--gold-lt);line-height:1}
+.stat span{display:block;margin-top:8px;font-size:13px;color:var(--soft);line-height:1.35}
+.statnote{font-size:12px;color:#8d897f;margin:-6px 0 0}
+.steps{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:36px;text-align:left}
+.step{background:var(--white);border-radius:20px;padding:26px;box-shadow:0 12px 30px -18px #0000003a;display:flex;flex-direction:column;gap:10px;min-width:0}
+.step .num{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;font:900 16px var(--display);background:linear-gradient(180deg,var(--gold-lt),var(--gold));color:var(--ink)}
+.step p{margin:0;color:var(--mute);font-size:15px}
+.step p.close{color:var(--ink);font-weight:700}
+.agents{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:36px;text-align:left}
+.agent{background:var(--card-dk);border:1px solid var(--line-dk);border-radius:18px;padding:22px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.agent .tag{align-self:flex-start;font-size:10.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);border:1px solid #6e5e1966;border-radius:999px;padding:4px 10px}
+.agent h3{font-size:17px}
+.agent p{margin:0;font-size:14px;color:var(--soft)}
+.agent .kills{margin-top:auto;padding-top:10px;border-top:1px dashed var(--line-dk);font-size:13px;color:var(--gold-lt);font-weight:600}
+.faq{max-width:760px;margin:30px auto 0;display:flex;flex-direction:column;gap:12px;text-align:left}
+details{background:var(--white);border:1px solid #e7e3d8;border-radius:14px;padding:18px 20px}
+summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:16px;align-items:center;font-weight:700;font-size:15px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";flex:none;width:26px;height:26px;border-radius:50%;display:grid;place-items:center;background:var(--gold-mid);color:var(--ink);font-weight:800}
+details[open] summary::after{content:"–"}
+details p{margin:12px 0 0;color:var(--mute);font-size:14.5px}
+footer{border-top:1px solid var(--line-dk);padding-block:36px;text-align:center;color:#8d897f;font-size:12px}
+footer p{max-width:720px;margin:10px auto 0}
+@media (max-width:820px){.steps,.agents,.proof{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}.slot:first-child{grid-row:auto;min-height:150px}}
+@media (prefers-reduced-motion:no-preference){.chart path.line{stroke-dasharray:900;animation:draw 1.6s ease-out both}@keyframes draw{from{stroke-dashoffset:900}to{stroke-dashoffset:0}}}
+
+.congrats{font-family:var(--body);font-size:17px;color:var(--soft)}.congrats b{color:var(--gold-lt)}
+.video{width:100%;max-width:820px;aspect-ratio:16/9;border-radius:18px;padding:6px;background:linear-gradient(135deg,var(--gold-lt),var(--gold),var(--gold-dk))}
+.video div{width:100%;height:100%;border-radius:13px;background:#0d0c0a;display:grid;place-items:center;text-align:center;padding:20px}
+.video b{display:block;font-family:var(--display);text-transform:uppercase;font-size:clamp(18px,3vw,28px)}.video span{color:#8d897f;font-size:14px}
+.play{width:64px;height:64px;border-radius:50%;margin:0 auto 14px;background:linear-gradient(180deg,var(--gold-lt),var(--gold));display:grid;place-items:center}
+.play::after{content:"";border-left:20px solid #000;border-top:12px solid transparent;border-bottom:12px solid transparent;margin-left:5px}
+.booker{width:100%;max-width:900px;display:grid;grid-template-columns:300px 1fr;border-radius:20px;overflow:hidden;background:#fff;color:var(--ink);text-align:left;box-shadow:0 30px 70px -30px #000}
+.bk-l{background:linear-gradient(180deg,var(--gold),var(--gold-dk));color:#fff;padding:28px;display:flex;flex-direction:column;gap:14px}
+.bk-l h3{font-size:22px}.bk-l p{margin:0;font-size:14px;opacity:.92}
+.bk-l .meta{font-size:14px;font-weight:600;display:flex;flex-direction:column;gap:6px}
+.bk-r{padding:26px;display:flex;flex-direction:column;gap:14px;min-width:0}
+.bk-r h4{margin:0;font-size:15px}
+.days{display:flex;gap:8px;overflow-x:auto;padding-bottom:4px}
+.day{flex:none;border:1px solid #ddd6c4;background:#fff;border-radius:12px;padding:8px 12px;text-align:center;cursor:pointer;font:600 13px var(--body);color:var(--ink)}
+.day b{display:block;font:800 18px var(--display)}
+.day[aria-pressed="true"]{border-color:var(--gold);background:#f7f0d4}
+.slots{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.tslot{border:1px solid #ddd6c4;background:#fff;border-radius:10px;padding:10px 4px;font:700 13px var(--body);color:var(--gold-dk);cursor:pointer}
+.tslot[aria-pressed="true"]{background:linear-gradient(180deg,var(--gold-lt),var(--gold));color:#000;border-color:transparent}
+.bk-r label{font-size:13px;font-weight:700;display:flex;flex-direction:column;gap:6px}
+.bk-r input{font:500 15px var(--body);padding:12px 14px;border:1px solid #d9d4c7;border-radius:10px;color:var(--ink);background:#fff;color-scheme:light}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.note{font-size:13px;color:var(--mute);margin:0}.err{font-size:14px;color:#a3261b;font-weight:700;margin:0}
+.done{display:flex;flex-direction:column;gap:12px;align-items:flex-start}
+.done h3{font-size:22px}.tick{width:52px;height:52px;border-radius:50%;background:linear-gradient(180deg,var(--gold-lt),var(--gold));display:grid;place-items:center;font:900 26px var(--display);color:#000}
+.btn.sm{padding:12px 20px;font-size:12px}
+.todo{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:30px;text-align:left}
+.todo div{background:#fff;border-radius:18px;padding:22px;box-shadow:0 12px 30px -18px #0000003a;display:flex;flex-direction:column;gap:8px}
+.todo i{font-style:normal;width:32px;height:32px;border-radius:50%;display:grid;place-items:center;font:900 15px var(--display);background:linear-gradient(180deg,var(--gold-lt),var(--gold))}
+.todo p{margin:0;color:var(--mute);font-size:14.5px}
+.check{max-width:640px;margin:22px auto 0;text-align:left;display:flex;flex-direction:column;gap:8px;color:var(--mute)}
+.check li{list-style:none}.check li::before{content:"✓  ";color:var(--gold-dk);font-weight:900}
+.why{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:30px;text-align:left}
+.why div{background:var(--card-dk);border:1px solid var(--line-dk);border-radius:18px;padding:20px;display:flex;flex-direction:column;gap:8px}
+.why b{color:var(--gold-lt);font-family:var(--display);text-transform:uppercase;font-size:16px}.why span{color:var(--soft);font-size:14.5px}
+.fitnote{max-width:660px;border:1px dashed #6e5e1999;border-radius:14px;padding:14px 18px;color:var(--soft);font-size:14.5px}
+@media (max-width:820px){.booker{grid-template-columns:1fr}.slots{grid-template-columns:repeat(3,1fr)}.todo,.why{grid-template-columns:1fr}.row2{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="topbar">Last step: book your free Agent Sprint call <span>(15 minutes, we call you)</span></div>
+<header><span class="logo"><i></i>INFINITE<b>CR8</b></span></header>
+
+<section class="dark hero">
+  <div class="wrap stack center">
+    <p class="congrats" id="congrats"><b>Congrats:</b> you're in.</p>
+    <h1>Watch this first. Then let's talk about <span class="gold">your agency</span>.</h1>
+    <p class="lead">A short walkthrough of the Agent Sprint: what goes into your agency, in what order, and what it takes off your team.</p>
+    <p class="fitnote" id="fitnote" hidden>Thanks for your answers. The Agent Sprint is built for agency owners doing $10K–$50K a month. If that's not you yet, you're still welcome to book: we'll tell you honestly whether agents would help today.</p>
+    <div class="video" aria-label="Agent Sprint walkthrough video"><div><div><span class="play"></span><b>The Agent Sprint in 3 minutes</b><span>Walkthrough video goes here</span></div></div></div>
+
+    <div class="booker" id="book">
+      <div class="bk-l">
+        <span class="eyebrow" style="color:#fff">InfiniteCR8</span>
+        <h3>Your free Agent Sprint call</h3>
+        <p>You tell us what you sell and where the hours go. We show you which agents would take that work and what it would look like for you.</p>
+        <div class="meta"><span>⏱ 15 minutes</span><span>📞 We call you at the number you give us</span><span>🕘 Times shown in US Eastern Time</span></div>
+      </div>
+      <div class="bk-r">
+        <form id="bookForm" novalidate>
+          <div style="display:flex;flex-direction:column;gap:14px">
+            <h4>Pick a day</h4><div class="days" id="days"></div>
+            <h4>What time works best?</h4><div class="slots" id="slots"></div>
+            <div class="row2"><label for="b-email">Email you applied with<input id="b-email" type="email" required autocomplete="email"></label>
+            <label for="b-phone">Phone we should call<input id="b-phone" type="tel" required autocomplete="tel"></label></div>
+            <button class="btn" type="submit" id="bookBtn">Book my call →</button>
+            <p class="err" id="bookErr" hidden></p>
+            <p class="note">No sales pitch on autopilot: a real person calls you at the time you pick.</p>
+          </div>
+        </form>
+        <div class="done" id="bookDone" hidden>
+          <span class="tick">✓</span><h3>You're booked</h3>
+          <p class="note" id="bookWhen"></p>
+          <a class="btn sm" id="gcal" target="_blank" rel="noopener">Add to Google Calendar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="dark" style="padding-top:0">
+  <div class="wrap center stack">
+    <span class="eyebrow">Most people do nothing</span>
+    <h2>Will you?</h2>
+    <p class="lead">Most agency owners read a page like this and do nothing. Next month the reports still eat the mornings, the software bill still renews and every new client still means another hire.</p>
+    <h2 style="margin-top:30px">So why book a call now?</h2>
+    <div class="why"><div><b>Kill the software bill</b><span>One agency replaced about $5,000 a year in subscriptions by moving onto one operating system.</span></div><div><b>Hand the busywork to agents</b><span>Daily client reports, alerts and follow-ups run on a schedule. The goal: five hours of manual work gone, every day.</span></div><div><b>Add agents, not headcount</b><span>SEO, ads, creator and outreach agents work the same accounts your people do. Ten times the daily output without new hires.</span></div><div><b>Sell more per client</b><span>Every agent is a service you can sell on contracts you already have. Up to four times the value of each contract.</span></div></div>
+    <div class="stats" style="margin-top:30px"><div class="stat"><strong>$5K</strong><span>a year in software subscriptions replaced</span></div><div class="stat"><strong>5 hrs</strong><span>of manual work cut every day</span></div><div class="stat"><strong>10×</strong><span>daily output from agents added to the team</span></div><div class="stat"><strong>4×</strong><span>potential client contract value from new services</span></div></div>
+    <p class="statnote">Measured inside a real Amazon and TikTok agency running the system today. Not typical or guaranteed.</p>
+    <a class="btn" href="#book">Pick my call time →</a>
+  </div>
+</section>
+
+<section class="light">
+  <div class="wrap center">
+    <div class="stack"><span class="eyebrow">Before you close this tab</span><h2>Do these 3 things now</h2></div>
+    <div class="todo">
+      <div><i>1</i><h3>Check your inbox</h3><p>Your confirmation email is on its way from dev@bullseyesellers.com. If it isn't there in a few minutes, check spam and promotions and move it to your main inbox.</p></div>
+      <div><i>2</i><h3>Put it in your calendar</h3><p>Once you've booked, tap "Add to Google Calendar" so the call has a reminder. We call you at the time you picked.</p><a class="btn sm" href="#book">Book first →</a></div>
+      <div><i>3</i><h3>Bring one list</h3><p>Bring a list of the software you pay for every month and the jobs that eat your team's mornings. That's what we map on the call.</p></div>
+    </div>
+    <ul class="check">
+      <li>Be near your phone at the time you picked. We call once, then email you.</li>
+      <li>15 minutes is enough: we keep to time.</li>
+      <li>Bring your business partner if they decide with you.</li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span class="logo"><i></i>INFINITE<b>CR8</b></span>
+    <p>This website is not endorsed by Meta, Google or TikTok in any way.</p>
+    <p>Figures shown come from one agency's use of the system and are not typical or guaranteed. Your results depend on your business, team and market.</p>
+  </div>
+</footer>
+
+<script>
+const CAMPAIGN="ICR8 \u00b7 Agent Sprint \u00b7 Agencies", KEY="icr8_lead_agencies";
+const SUPABASE_URL="https://yvnpvershvnkivjhvwkw.supabase.co", PUBLISHABLE_KEY="sb_publishable_b3j-pkO_Fa-gsrUkN1Bj5Q_98oGD-XB";
+const $=id=>document.getElementById(id);
+let me={}; try{me=JSON.parse(sessionStorage.getItem(KEY)||"{}");}catch(e){}
+if(me.email) $("b-email").value=me.email; if(me.phone) $("b-phone").value=me.phone;
+if(me.first) $("congrats").innerHTML="<b>Congrats, "+me.first.replace(/[<>&]/g,"")+":</b> you're in.";
+if(me.fit===false) $("fitnote").hidden=false;
+if(!me.email) $("congrats").innerHTML="<b>Welcome back.</b> Pick a time below.";
+
+// next 10 weekdays, 9:00 AM to 4:30 PM Eastern, every 30 minutes
+const days=[], now=new Date();
+for(let d=new Date(now.getFullYear(),now.getMonth(),now.getDate()+1); days.length<10; d.setDate(d.getDate()+1)) if(d.getDay()%6) days.push(new Date(d));
+const SLOTS=[]; for(let h=9; h<17; h++) for(const m of [0,30]) SLOTS.push([h,m]);
+const fmt=(h,m)=>((h+11)%12+1)+":"+String(m).padStart(2,"0")+(h<12?" AM":" PM");
+let pickDay=null, pickSlot=null;
+$("days").innerHTML=days.map((d,i)=>`<button type="button" class="day" data-i="${i}" aria-pressed="false">${d.toLocaleDateString("en-US",{weekday:"short"})}<b>${d.getDate()}</b>${d.toLocaleDateString("en-US",{month:"short"})}</button>`).join("");
+$("slots").innerHTML=SLOTS.map((s,i)=>`<button type="button" class="tslot" data-i="${i}" aria-pressed="false">${fmt(s[0],s[1])}</button>`).join("");
+const pick=(sel,attr,set)=>document.querySelectorAll(sel).forEach(b=>b.addEventListener("click",()=>{document.querySelectorAll(sel).forEach(x=>x.setAttribute("aria-pressed","false"));b.setAttribute("aria-pressed","true");set(+b.dataset.i);}));
+pick(".day","i",i=>pickDay=i); pick(".tslot","i",i=>pickSlot=i);
+document.querySelector(".day").click();
+
+// ET → UTC for the calendar link (US Eastern: UTC-5, UTC-4 in daylight time)
+function etToUtc(d,h,m){const probe=new Date(Date.UTC(d.getFullYear(),d.getMonth(),d.getDate(),h+5,m));
+  const etHour=+new Intl.DateTimeFormat("en-US",{timeZone:"America/New_York",hour:"numeric",hour12:false}).format(probe);
+  return new Date(probe.getTime()-((etHour-h+24)%24)*3600000);}
+const z=d=>d.toISOString().replace(/[-:]/g,"").replace(/\.\d+/,"");
+const err=t=>{$("bookErr").textContent=t;$("bookErr").hidden=false;};
+$("bookForm").addEventListener("submit",e=>{
+  e.preventDefault(); $("bookErr").hidden=true;
+  const email=$("b-email").value.trim(), phone=$("b-phone").value.trim();
+  if(pickDay===null||pickSlot===null) return err("Pick a day and a time.");
+  if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) return err("Add the email you applied with.");
+  if(phone.replace(/\D/g,"").length<7) return err("Add the phone number we should call.");
+  const d=days[pickDay], [h,m]=SLOTS[pickSlot];
+  const when=d.toLocaleDateString("en-US",{weekday:"short",month:"short",day:"numeric",year:"numeric"})+", "+fmt(h,m)+" ET";
+  const btn=$("bookBtn"); btn.disabled=true; btn.textContent="Booking…";
+  fetch(SUPABASE_URL+"/rest/v1/rpc/meta_book_call",{method:"POST",headers:{"apikey":PUBLISHABLE_KEY,"Content-Type":"application/json"},
+    body:JSON.stringify({p_email:email,p_campaign:CAMPAIGN,p_when:when,p_phone:phone})})
+  .then(r=>r.ok?r.json():Promise.reject(new Error("HTTP "+r.status)))
+  .then(ok=>{
+    if(ok!==true){btn.disabled=false;btn.textContent="Book my call →";return err("We couldn't find an application with that email. Use the email you applied with, or apply first on the agency page.");}
+    if(window.fbq) fbq("track","Schedule",{content_name:CAMPAIGN});
+    if(window.gtag) gtag("event","book_call",{campaign:CAMPAIGN});
+    const s=etToUtc(d,h,m), en=new Date(s.getTime()+15*60000);
+    $("gcal").href="https://calendar.google.com/calendar/render?action=TEMPLATE&text="+encodeURIComponent("Agent Sprint call with InfiniteCR8")+"&dates="+z(s)+"/"+z(en)+"&details="+encodeURIComponent("15-minute call. InfiniteCR8 calls you at the number you gave.");
+    $("bookWhen").textContent="We'll call you on "+when+". A reminder is coming to your inbox.";
+    $("bookForm").hidden=true; $("bookDone").hidden=false;
+  })
+  .catch(()=>{btn.disabled=false;btn.textContent="Book my call →";err("Something went wrong booking that. Please try again in a moment.");});
+});
+</script>
+</body>
+</html>

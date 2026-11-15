@@ -88,7 +88,8 @@ footer p{max-width:720px;margin:10px auto 0}
 .sheet input,.sheet select{font:500 15px var(--body);padding:12px 14px;border:1px solid #d9d4c7;border-radius:10px;background:#fff;color:var(--ink)}
 .sheet .x{position:absolute;top:12px;right:14px;background:none;border:0;font-size:24px;cursor:pointer;color:var(--mute)}
 .sheet .ok{font-size:14px;color:var(--gold-dk);font-weight:700;margin:0}
-@media (max-width:820px){.steps,.agents,@media (prefers-reduced-motion:no-preference){.chart path.line{stroke-dasharray:900;animation:draw 1.6s ease-out both}@keyframes draw{from{stroke-dashoffset:900}to{stroke-dashoffset:0}}}
+@media (max-width:820px){.steps,.agents,.proof{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}.slot:first-child{grid-row:auto;min-height:150px}}
+@media (prefers-reduced-motion:no-preference){.chart path.line{stroke-dasharray:900;animation:draw 1.6s ease-out both}@keyframes draw{from{stroke-dashoffset:900}to{stroke-dashoffset:0}}}
 html,body{overflow-x:hidden}
 .sheet .err{font-size:14px;color:#a3261b;font-weight:700;margin:0}
 </style>
@@ -185,7 +186,7 @@ html,body{overflow-x:hidden}
     <button class="btn" type="submit" id="applyBtn">Send my answers →</button>
     <p class="err" id="applyErr" hidden></p>
   </form>
-  <div class="sheet" id="applyDone" hidden><span class="eyebrow">Got it</span><h2>Thanks, we have your answers</h2><p style="margin:0;color:var(--mute)">We'll look at your answers and get back to you to book your call. You'll get an email from us in a minute.</p><button class="btn" type="button" data-close>Close</button></div>
+  <div class="sheet" id="applyDone" hidden><span class="eyebrow">Got it</span><h2>Thanks, we have your answers</h2><p style="margin:0;color:var(--mute)">We'll look at your answers and get back to you to book your call. Taking you to the last step: book your call…</p><button class="btn" type="button" data-close>Close</button></div>
 </div>
 
 <script>const PROOF_STATS=[["$5K","a year in software subscriptions replaced"],["5 hrs","of manual work cut every day"],["10×","daily output from agents added to the team"],["4×","potential client contract value from new services"]];
@@ -225,6 +226,8 @@ const SHARED_FAQ=[["How much of my time does this take?","The four steps run in 
 const PAGE_CAMPAIGN='ICR8 · Agent Sprint · Agencies';
 const ASKED_ABOUT='Agent Sprint for agencies';
 const UTM_KEY="icr8_utm_agencies";
+const LEAD_KEY="icr8_lead_agencies";
+const NOT_FIT=["Freelancer", "Not an owner yet"];
 
 const $=id=>document.getElementById(id);
 const esc=s=>s.replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
@@ -275,7 +278,10 @@ $("applyForm").addEventListener("submit",e=>{
   .then(r=>{if(!r.ok)throw new Error("HTTP "+r.status);
     if(window.gtag)gtag("event","generate_lead",{campaign:lead.campaign,ad:lead.ad||""});
     if(window.fbq)fbq("track","Lead",{content_name:lead.campaign});
-    f.hidden=true; $("applyDone").hidden=false;})
+    const fit=!NOT_FIT.includes(role) && rev!=="Under $10K a month";
+    try{sessionStorage.setItem(LEAD_KEY,JSON.stringify({email,phone,first:name.split(/\s+/)[0],fit}));}catch(e){}
+    f.hidden=true; $("applyDone").hidden=false;
+    setTimeout(()=>{location.href="call/";},700);})
   .catch(()=>{btn.disabled=false;btn.textContent="Send my answers →";err("Something went wrong sending that. Please try again in a moment.");});
 });
 </script>
